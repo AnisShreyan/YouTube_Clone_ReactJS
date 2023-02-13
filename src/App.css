@@ -1,38 +1,243 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: transparent;
+  font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#id {
+  width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  width: 100vw;
+  height: 56px;
+  /* background-color: #0F0F0F; */
+  /* background-color: brown; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header-child {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding: 0 12px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.hambergerIcon {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hambergerIcon svg {
+  height: 26px;
+  width: 24px;
+  margin: 3px;
+}
+
+.hambergerIcon:hover {
+  background-color: #e5e5e5;
+}
+
+.header-child input {
+  border-radius: 40px 0 0 40px;
+  padding: 7px;
+  padding-left: 12px;
+  font-size: 18px;
+  width: 45vw;
+  border-color: transparent;
+  font-weight: 400;
+  line-height: 1.5rem;
+  height: 40px;
+  border: 0.5px #ddd solid;
+}
+.header-child button {
+  height: 40px;
+  padding: 0 18px;
+  border-radius: 0 40px 40px 0;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.header-child:nth-child(3) {
+  padding: 0 20px;
+}
+
+.threedot {
+  color: #ddd;
+  padding-right: 20px;
+}
+
+.threedot svg {
+  color: #000;
+  cursor: pointer;
+  width: 18px;
+}
+
+/* Video-Grid */
+
+.Video-Grid {
+  display: grid;
+  max-width: calc(100% - 40px);
+  margin: 20px;
+  /* background-color: blueviolet; */
+  height: 80vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.videos {
+  user-select: none;
+  cursor: pointer;
+}
+.thumbnail {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.channel-logo {
+  width: 45px;
+  height: 100%;
+  border-radius: 50%;
+  margin-right: 12px;
+  margin-top: 12px;
+}
+
+.vid-details {
+  display: flex;
+}
+
+.tag {
+  margin-top: 12px;
+}
+
+.tag :nth-child(1) {
+  /* color: #fff; */
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.tag :nth-child(2),
+.tag :nth-child(3) {
+  color: #606060;
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+.tag p span {
+  font-weight: 500;
+  position: relative;
+  top: -3px;
+  margin: 0 5px;
+}
+
+.top-scroll-bar {
+  /* overflow-x: hidden; */
+  max-width: calc(100% - 40px);
+  margin: 10px 20px 0;
+}
+
+.top-scroll-bar ul li {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 7px 12px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  user-select: none;
+  transition: background-color 1s;
+}
+
+.top-scroll-bar ul li:hover {
+  background-color: #e5e5e5;
+}
+
+.top-scroll-bar .slider-active {
+  background-color: rgba(0, 0, 0, 1);
+  color: #fff;
+}
+
+.top-scroll-bar .slider-active:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.vidGridContnr {
+  display: flex;
+  align-items: flex-start;
+}
+.vidGridContnr .right {
+  width: 100%;
+}
+
+/* sidebar-uncollapsed */
+
+.sidebar {
+  margin: 0 20px;
+}
+
+.sidebar svg {
+  height: 24px;
+  user-select: none;
+  margin: 0 10px;
+}
+.sidebar ul li {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px;
+  padding: 5px 7px;
+  padding-left: 0;
+  border-radius: 10px;
+}
+
+.sidebar ul li:hover {
+  background-color: #f2f2f2;
+}
+
+/* sidebar-collapsed */
+
+.sidebar-collapsed {
+  margin: 0 10px;
+  margin-top: 12px;
+}
+
+.sidebar-collapsed svg {
+  height: 30px;
+  user-select: none;
+}
+
+.sidebar-collapsed ul li {
+  user-select: none;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 11px;
+  border-radius: 10px;
+  padding: 20px 0;
+  line-height: 20px; 
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar-collapsed ul li:hover {
+  background-color: #f2f2f2;
 }
