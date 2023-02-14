@@ -11,6 +11,7 @@ function VideoGrid() {
       date: "8 days",
       logo: "https://yt3.ggpht.com/ByvUQswoQuVBMrNKtoRaHeJpV-G7OT99ECTkDIPO3Fb-ImXW_vDzmd-BqvAsx-YgoEaQeSJH5w=s68-c-k-c0x00ffffff-no-rj",
       channelName: "Prompt Engineering",
+      length: "9.34",
     },
 
     {
@@ -21,6 +22,7 @@ function VideoGrid() {
       date: "8 days",
       logo: "https://yt3.ggpht.com/ytc/AL5GRJVRMyKv1r1TNf_OB-fXjlJyhiiPNbbvJ7Y-TPLH1A=s68-c-k-c0x00ffffff-no-rj",
       channelName: " Jensen Tung",
+      length: "9.34",
     },
 
     {
@@ -32,6 +34,7 @@ function VideoGrid() {
       date: "13 days",
       logo: "https://yt3.ggpht.com/ytc/AL5GRJXPR4dSz0wwP-elkeiWUMnfZlCtNZP8Rd-tmFOZYg=s68-c-k-c0x00ffffff-no-rj",
       channelName: "freeCodeCamp.org",
+      length: "9.34",
     },
 
     {
@@ -42,6 +45,7 @@ function VideoGrid() {
       date: "1 year",
       logo: "https://yt3.ggpht.com/JfcqVinxsIc8dYsPIrp6IBDRMBb420BqVd2bzS9wqcMWBTzmnjUJ74Q0VByY1gUA8p-AYZQzxQ=s68-c-k-c0x00ffffff-no-rj",
       channelName: "developedbyed",
+      length: "9.34",
     },
 
     {
@@ -53,6 +57,7 @@ function VideoGrid() {
       date: "4 weeks",
       logo: "https://yt3.ggpht.com/ytc/AL5GRJWfauqXCWct2vojX-5tHLL-8PHUS8uZMWO9bq9Y=s68-c-k-c0x00ffffff-no-rj",
       channelName: "The Flutter Way",
+      length: "9.34",
     },
     {
       thumbnail:
@@ -62,6 +67,7 @@ function VideoGrid() {
       date: "3 weeks",
       logo: "https://yt3.ggpht.com/GbNZ376PtR6w-cUMn9zWCrU1HhvG5m-8R7rFeadGmwT6ueb8CnWyO4OgyJIrEZrm_c2W1EDd=s68-c-k-c0x00ffffff-no-rj",
       channelName: "Coding With Dawid",
+      length: "9.34",
     },
     {
       thumbnail:
@@ -71,14 +77,17 @@ function VideoGrid() {
       date: "1 year",
       logo: "https://yt3.ggpht.com/ytc/AL5GRJUvyoz58-Shq477iC8w1Q0zl8Cp10Zmuo6Gw9YUrA=s68-c-k-c0x00ffffff-no-rj",
       channelName: "Kevin Powell",
+      length: "9.34",
     },
     {
-      thumbnail: "https://i.ytimg.com/vi/Zddof7W_xnY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDke8IBHTdlNdW2hISgdgclEY4j9A",
+      thumbnail:
+        "https://i.ytimg.com/vi/Zddof7W_xnY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDke8IBHTdlNdW2hISgdgclEY4j9A",
       title: "11 Section layouts to make your website ultra UNIQUE...",
       views: "8.1K",
       date: "5 days",
       logo: "https://yt3.ggpht.com/Q6cghE6QO1xUWwMM1jFWoH3ipt3ILUQRNLWvmqQs1UmWmoiMrDGQhD78cbd3ViA3fU2d4TpU=s68-c-k-c0x00ffffff-no-rj",
       channelName: "Payton Clark Smith",
+      length: "9.34",
     },
   ];
 
@@ -92,6 +101,7 @@ function VideoGrid() {
           date={x.date}
           logo={x.logo}
           channelName={x.channelName}
+          length={x.length}
           key={y}
         />
       ))}

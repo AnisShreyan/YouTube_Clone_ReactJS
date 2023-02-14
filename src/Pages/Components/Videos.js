@@ -1,10 +1,11 @@
 import React from "react";
 
-function Videos({ thumbnail, title, views, date, logo, channelName }) {
+function Videos({ thumbnail, title, views, date, logo, channelName, length }) {
   return (
     <>
       <div className="videos">
         <img className="thumbnail" src={thumbnail} />
+        <p className="video-length">{length}</p>
         <div className="vid-details">
           <img className="channel-logo" src={logo} />
           <div className="tag">

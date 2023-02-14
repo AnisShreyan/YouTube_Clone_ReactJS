@@ -110,6 +110,7 @@
 .thumbnail {
   max-width: 100%;
   border-radius: 15px;
+  z-index: 1;
 }
 
 .channel-logo {
@@ -122,6 +123,20 @@
 
 .vid-details {
   display: flex;
+}
+
+.video-length{
+  position: relative;
+  font-size: 14px;
+  color: white;
+  background-color: #000;
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-top: -25px;
+  margin: -30px 12px;
+  float: right;
+  padding: 2px 4px;
+  border-radius: 5px;
 }
 
 .tag {
@@ -140,6 +155,9 @@
   color: #606060;
   font-size: 12px;
   margin: 2px 0;
+}
+.tag :nth-child(2):hover {
+  color: #000;
 }
 
 .tag p span {
@@ -213,6 +231,8 @@
 .sidebar ul li:hover {
   background-color: #f2f2f2;
 }
+
+
 
 /* sidebar-collapsed */
 
