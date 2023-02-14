@@ -38,12 +38,13 @@
 }
 
 .hambergerIcon {
-  padding: 8px;
+  padding: 2px;
   cursor: pointer;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 6px;
 }
 .hambergerIcon svg {
   height: 26px;
@@ -63,7 +64,6 @@
   width: 45vw;
   border-color: transparent;
   font-weight: 400;
-  line-height: 1.5rem;
   height: 40px;
   border: 0.5px #ddd solid;
 }
